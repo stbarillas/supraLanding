@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Bulma!</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="style/helper.css">
+        <!--<link rel="stylesheet" href="style/debug.css">-->
+    </head>
+
+<style>
+    #landing {
+        background:  url(static/background/2560_hero.jpeg) center/cover;
+    }
+
+    #intro_title {
+        margin-top: 5.1875rem;
+        margin-bottom: 1.5625rem;
+        font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+        font-size: 4vw;
+        text-transform:uppercase;
+        width: 100%;
+        color: black;
+    }
+    #intro_subtitle {
+        margin-bottom: 3.5rem;
+    }
+
+    /* Calls different sizes of the same element depending on screen width */
+    /*Landing Section background image*/
+    @media (max-width: 1024px) {#landing {background: url(static/background/1024_hero.jpeg) center/cover}}
+    @media (max-width: 768px) {#landing {background: url(static/background/768_hero.jpeg) center/cover}}
+    @media (max-width: 600px) {#landing {background: url(static/background/600_hero.jpeg) center/cover}}
+    @media (max-width: 375px) {#landing {background: url(static/background/375_hero.jpeg) center/cover}}
+    /*Intro section beauty image*/
+    @media (max-width: 1024px) {#intro {background: url(static/background/1024_beauty_01.jpg) center/cover}}
+    @media (max-width: 768px) {#intro {background: url(static/background/768_beauty_01.jpg) center/cover}}
+    @media (max-width: 600px) {#intro {background: url(static/background/600_beauty_01.jpg) center/cover}}
+    /*Intro section title font*/
+    @media screen and (max-width: 1800px) {#intro_title {font-size: 5vw}}
+    @media screen and (max-width: 1500px) {#intro_title {font-size: 6vw}}
+    @media screen and (max-width: 1200px) {#intro_title {font-size: 7vw}}
+    @media screen and (max-width: 1000px) {#intro_title {font-size: 8vw}}
+    @media screen and (max-width: 800px) {#intro_title {font-size: 9vw}}
+
+</style>
+
+    <body>
+        <!--Hero banner-->
+        <section class="hero is-black is-fullheight" id="landing"  >
+            <!--Hero head-->
+            <div class="hero-head">
+                <figure class="image center">
+                    <img src='static/logos/GR_logo.svg' style="padding: 15px; height: 9.38rem; width: 54.38rem;">
+                </figure>
+            </div>
+            <!--Hero foot-->
+            <div class="hero-foot center-column" style="padding:50px">
+                <button class="button center is-medium is-rounded" style="background-color: #e50404; color: white; border-color: transparent">Get Updates</button>
+                <h1>Placeholder icon</h1>
+            </div>
+        </section>
+        <!-- Nav Bar Section-->
+        <section>
+            <div class="columns is-mobile is-marginless" style="background-color: #0a0a0a; height: 65px;">
+                <!--Left Column desktop-->
+                <div class="column center desktop">
+                    <figure class="image">
+                        <img src='static/logos/GR_logo.svg' style="height: 3.71rem; width: 12.65rem;">
+                    </figure>
+                </div>
+                <!--Left Column portable-->
+                <div class="column center portable">
+                    <figure class="image">
+                        <img src='static/logos/supra_logo.svg' style="height: 3.71rem; width: 12.65rem;">
+                    </figure>
+                </div>
+                <!--Center Column desktop-->
+                <div class="column center desktop">
+                    <p class="navbar-item" style="margin-right: 40px">Design</p>
+                    <p class="navbar-item" style="margin-right: 40px"> Performance</p>
+                    <p class="navbar-item" style="margin-right: 0px">Heritage</p>
+                </div>
+                <!--Center Column portable-->
+                <div class="center-column portable">
+                    <p><i class="fas fa-chevron-down"></i></p>
+                </div>
+                <!--Right Column-->
+                <div class="column center">
+                    <button class="button is-medium is-rounded " style="background-color: #e50404; color: white; border-color: transparent">Get Updates</button>
+                </div>
+            </div>
+        </section>
+        <!--Intro Section-->
+        <section id="intro_section">
+                <div class="container has-text-centered" id="intro_container">
+                    <p class="title is-spaced" id="intro_title"> Believe the hype.<br/>The 2020 GR Supra. </p>
+                    <p class="subtitle" id="intro_subtitle">After years of rumors, whispers and a whole lot of anticipation,
+                        we’ve finally been given the green light to say it: Supra is back. The all-new
+                        2020 GR Supra is no mere sports car—it’s our purest expression of performance,
+                        designed to allow driver, car and road to become one. Beautifully balanced, and
+                        even more beautiful to look at, the GR Supra is set to define the next generation
+                        of performance.
+                    </p>
+                </div>
+        </section>
+
+    </body>
+</html>
