@@ -8,7 +8,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <link rel="stylesheet" href="style/helper.css">
-        <!--<link rel="stylesheet" href="style/debug.css">-->
+        <link rel="stylesheet" href="style/debug.css">
     </head>
 
 <style>
@@ -28,6 +28,19 @@
     #intro_subtitle {
         margin-bottom: 3.5rem;
     }
+    #description_title {
+        margin-top: 5.1875rem;
+        margin-bottom: 1.5625rem;
+        font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+        font-size: 3vw;
+        text-transform:uppercase;
+        width: 100%;
+        color: black;
+    }
+    #description_subtitle {
+        margin-bottom: 3.5rem;
+    }
+
 
     /* Calls different sizes of the same element depending on screen width */
     /*Landing Section background image*/
@@ -35,17 +48,22 @@
     @media (max-width: 768px) {#landing {background: url(static/background/768_hero.jpeg) center/cover}}
     @media (max-width: 600px) {#landing {background: url(static/background/600_hero.jpeg) center/cover}}
     @media (max-width: 375px) {#landing {background: url(static/background/375_hero.jpeg) center/cover}}
-    /*Intro section beauty image*/
-    @media (max-width: 1024px) {#intro {background: url(static/background/1024_beauty_01.jpg) center/cover}}
-    @media (max-width: 768px) {#intro {background: url(static/background/768_beauty_01.jpg) center/cover}}
-    @media (max-width: 600px) {#intro {background: url(static/background/600_beauty_01.jpg) center/cover}}
     /*Intro section title font*/
     @media screen and (max-width: 1800px) {#intro_title {font-size: 5vw}}
     @media screen and (max-width: 1500px) {#intro_title {font-size: 6vw}}
     @media screen and (max-width: 1200px) {#intro_title {font-size: 7vw}}
     @media screen and (max-width: 1000px) {#intro_title {font-size: 8vw}}
     @media screen and (max-width: 800px) {#intro_title {font-size: 9vw}}
-
+    /*Intro section beauty image*/
+    @media (max-width: 1024px) {#intro {background: url(static/background/1024_beauty_01.jpg) center/cover}}
+    @media (max-width: 768px) {#intro {background: url(static/background/768_beauty_01.jpg) center/cover}}
+    @media (max-width: 600px) {#intro {background: url(static/background/600_beauty_01.jpg) center/cover}}
+    /*Description section title font*/
+    @media screen and (max-width: 1800px) {#description_title {font-size: 4vw}}
+    @media screen and (max-width: 1500px) {#description_title {font-size: 5vw}}
+    @media screen and (max-width: 1200px) {#description_title {font-size: 5.8vw}}
+    @media screen and (max-width: 1000px) {#description_title {font-size: 7vw}}
+    @media screen and (max-width: 800px) {#description_title {font-size: 6vw}}
 </style>
 
     <body>
@@ -96,17 +114,45 @@
         </section>
         <!--Intro Section-->
         <section id="intro_section">
-                <div class="container has-text-centered" id="intro_container">
-                    <p class="title is-spaced" id="intro_title"> Believe the hype.<br/>The 2020 GR Supra. </p>
-                    <p class="subtitle" id="intro_subtitle">After years of rumors, whispers and a whole lot of anticipation,
-                        we’ve finally been given the green light to say it: Supra is back. The all-new
-                        2020 GR Supra is no mere sports car—it’s our purest expression of performance,
-                        designed to allow driver, car and road to become one. Beautifully balanced, and
-                        even more beautiful to look at, the GR Supra is set to define the next generation
-                        of performance.
-                    </p>
-                </div>
+            <div class="container has-text-centered" id="intro_container">
+                <p class="title is-spaced" id="intro_title"> Believe the hype.<br/>The 2020 GR Supra. </p>
+                <p class="subtitle" id="intro_subtitle">After years of rumors, whispers and a whole lot of anticipation,
+                    we’ve finally been given the green light to say it: Supra is back. The all-new
+                    2020 GR Supra is no mere sports car—it’s our purest expression of performance,
+                    designed to allow driver, car and road to become one. Beautifully balanced, and
+                    even more beautiful to look at, the GR Supra is set to define the next generation
+                    of performance.
+                </p>
+            </div>
         </section>
-
+        <section>
+            <img src="static/background/1500_beauty_01.jpg" style="width: 100%">
+        </section>
+        <section id="description_section">
+            <div class="container has-text-centered" id="description_container">
+                <p class="title is-spaced" id="description_title"> Beautifully engineered</p>
+                <p class="subtitle" id="description_subtitle">With its sensuous bodywork, athletic stance and
+                    expressive, jewel-like LED headlights, the 2020 GR Supra is a stunning work of art. But it’s the
+                    science behind the design that makes this car a true masterpiece. Up front, its wide grille is
+                    designed to channel cool air directly to the turbocharged engine, helping optimize performance.
+                    Up top, its “double-bubble” roof adds space inside while reducing aerodynamic drag outside. And
+                    its flared rear spoiler does more than make a dramatic statement—it helps reduce body lift and
+                    helps keep Supra planted when running at speed.
+                </p>
+            </div>
+        </section>
+        <div class="tile is-ancestor">
+            <div class="tile is-4 is-vertical">
+                <div class="tile">
+                 Top tile
+                </div>
+                <div class="tile">
+                 Bottom tile
+                </div>
+            </div>
+          <div class="tile">
+            <!-- This tile will take up the whole vertical space -->
+          </div>
+        </div>
     </body>
 </html>
