@@ -13,6 +13,7 @@
     </head>
 
 <style>
+
     #landing {
         background:  url(static/background/2560_hero.jpeg) center/cover;
     }
@@ -42,6 +43,30 @@
         margin-bottom: 3.5rem;
     }
 
+    #highlight-one, #highlight-two{
+        background: black;
+        padding-left: 60px!important;
+        padding-right: 60px!important;
+    }
+
+    #highlight1-title, #highlight2-title {
+        color: white;
+        font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+        font-size: 24px;
+        text-align: right;
+        font-weight: 700;
+
+    }
+
+    #highlight1-subtitle, #highlight2-subtitle {
+        color: white;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    #highlight2-title ,#highlight2-subtitle {
+        text-align: left;
+    }
 
     /* Calls different sizes of the same element depending on screen width */
     /*Landing Section background image*/
@@ -78,12 +103,12 @@
             </div>
             <!--Hero foot-->
             <div class="hero-foot center-column" style="padding:50px">
-                <button class="button center is-medium is-rounded" style="background-color: #e50404; color: white; border-color: transparent">Get Updates</button>
+                <button class="button center is-medium is-rounded" style="background-color: #B30000; color: white; border-color: transparent">Get Updates</button>
                 <h1>Placeholder icon</h1>
             </div>
         </section>
         <!-- Nav Bar Section-->
-        <section>
+        <section style="top: 0; position: sticky; z-index: 1">
             <div class="columns is-mobile is-marginless" style="background-color: #0a0a0a; height: 65px;">
                 <!--Left Column desktop-->
                 <div class="column center desktop">
@@ -109,7 +134,7 @@
                 </div>
                 <!--Right Column-->
                 <div class="column center">
-                    <button class="button is-medium is-rounded " style="background-color: #e50404; color: white; border-color: transparent">Get Updates</button>
+                    <button class="button is-medium is-rounded " style="background-color: #B30000; color: white; border-color: transparent">Get Updates</button>
                 </div>
             </div>
         </section>
@@ -144,8 +169,9 @@
         </section>
         <!-- Gallery -->
         <section class="center">
-            <div id="grid" style="width: 1500px; height: 1500px">
-                <div id="a">
+            <div id="grid" style="width: 100%; max-width: 1800px;">
+                <div id="a" style="height: 100%">
+                    <img src="static/gallery/design_01.jpg"/>
                 </div>
                 <div id="b">
                     <img src="static/gallery/design_02.jpg"/>
@@ -154,58 +180,69 @@
                     <img src="static/gallery/design_03.jpg"/>
                 </div>
                 <div id="d">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_04.jpg"/>
                 </div>
                 <div id="e">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_05.jpg"/>
                 </div>
                 <div id="f">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_06.jpg"/>
                 </div>
                 <div id="g">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_07.jpg"/>
                 </div>
                 <div id="h">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_08.jpg"/>
                 </div>
                 <div id="i">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_09.jpg"/>
                 </div>
                 <div id="j">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_10.jpg"/>
                 </div>
                 <div id="k">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_11.jpg"/>
                 </div>
                 <div id="l">
-                    <p>hello, world!</p>
+                    <img src="static/gallery/design_12.jpg"/>
                 </div>
-                <div id="m">
-                    <p>hello, world!</p>
+            </div>
+        </section>
+        <section>
+            <div class="center" style="margin: 3rem;">
+                <button class="button center is-medium is-rounded" style="background-color: #B30000; color: white; border-color: transparent">Load More</button>
+            </div>
+        </section>
+        <section class="center center-column is-gapless">
+            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 500px; margin-bottom: 0">
+                <div class="column is-three-quarters" >
+                    <img src="static/highlight/highlight_01.jpg" height="665" width="1500"/>
                 </div>
-                <div id="n">
-                    <p>hello, world!</p>
+                <div class="column is-one-quarter is-black center-column" id="highlight-one">
+                    <div>
+                        <p class="title is-spaced" id="highlight1-title">The GR Supra Launch Edition</p>
+                        <p class="subtitle" id="highlight1-subtitle"> Only a lucky few will get the opportunity to experience the GR Supra Launch
+                            Edition. Limited to just 1500 units—and available in Renaissance Red 2.0, Nocturnal or Absolute
+                            Zero—each of these cars comes standard with red mirror caps, unique matte-black wheels, and an
+                            individually numbered interior badge with Akio Toyoda’s signature.
+                        </p>
+                        <p style="color:#B30000; text-transform: uppercase; text-align: right">Learn More</p>
+                    </div>
                 </div>
-                <div id="o">
-                    <p>hello, world!</p>
+            </div>
+            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 500px;">
+                <div class="column is-one-quarter is-black center-column" id="highlight-two">
+                    <div>
+                        <p class="title is-spaced" id="highlight2-title">Barrett-Jackson Auction</p>
+                        <p class="subtitle" id="highlight2-subtitle"> The first globally produced all-new 2020 GR
+                            Supra goes for $2.1 Million at the Barrett-Jackson Auction, benefiting the American
+                            Heart Association and the Bob Woodruff Foundation.
+                        </p>
+                        <p style="color:#B30000; text-transform: uppercase; text-align: left">Learn More</p>
+                    </div>
                 </div>
-                <div id="p">
-                    <p>hello, world!</p>
-                </div>
-                <div id="q">
-                    <p>hello, world!</p>
-                </div>
-                <div id="r">
-                    <p>hello, world!</p>
-                </div>
-                <div id="s">
-                    <p>hello, world!</p>
-                </div>
-                <div id="t">
-                    <p>hello, world!</p>
-                </div>
-                <div id="u">
-                    <p>hello, world!</p>
+                <div class="column is-three-quarters ">
+                    <img src="static/highlight/highlight_02.jpg" height="665" width="1500"/>
                 </div>
             </div>
         </section>

@@ -32,11 +32,15 @@
         "s t u"
 }
 
-/*@media (max-width: 512px) {*/
-    /*#grid {*/
-        /*grid-template-areas:*/
-            /*"a a a"*/
-            /*"b c d"*/
-            /*"e e e";*/
-    /*}*/
-/*}*/
+
+@media (max-width: 767px) {
+    #grid {
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f"
+            "g h"
+            "i j"
+            "k l"
+    }
+}
