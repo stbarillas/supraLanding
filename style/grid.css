@@ -44,3 +44,27 @@
             "k l"
     }
 }
+/*Grid layout for detail grid*/
+#torque { grid-area: a; }
+#weight { grid-area: b; }
+#speed { grid-area: c; }
+#detail-grid {
+    display: grid;
+    grid-template-areas:
+        "a b c"
+}
+@media (max-width: 767px) {
+    #detail-grid {
+        grid-template-areas:
+            "a b"
+            "c c"
+    }
+}
+@media (max-width: 599px) {
+    #detail-grid {
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+    }
+}

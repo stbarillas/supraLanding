@@ -18,7 +18,7 @@
         background:  url(static/background/2560_hero.jpeg) center/cover;
     }
 
-    #intro_title {
+    #intro_title, #detail_title {
         margin-top: 5.1875rem;
         margin-bottom: 1.5625rem;
         font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
@@ -27,7 +27,7 @@
         width: 100%;
         color: black;
     }
-    #intro_subtitle {
+    #intro_subtitle, #detail_subtitle {
         margin-bottom: 3.5rem;
     }
     #description_title {
@@ -43,13 +43,13 @@
         margin-bottom: 3.5rem;
     }
 
-    #highlight-one, #highlight-two{
+    #highlight-one,#highlight-one-p, #highlight-two, #highlight-two-p, #performance-one, #performance-one-p {
         background: black;
         padding-left: 60px!important;
         padding-right: 60px!important;
     }
 
-    #highlight1-title, #highlight2-title {
+    #highlight1-title, #highlight1-title-p, #highlight2-title, #highlight2-title-p, #performance-title, #performance-title-p {
         color: white;
         font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
         font-size: 24px;
@@ -58,7 +58,7 @@
 
     }
 
-    #highlight1-subtitle, #highlight2-subtitle {
+    #highlight1-subtitle, #highlight1-subtitle-p, #highlight2-subtitle, #highlight2-subtitle-p, #performance-subtitle, #performance-subtitle-p {
         color: white;
         text-align: right;
         margin-bottom: 5px;
@@ -67,7 +67,24 @@
     #highlight2-title ,#highlight2-subtitle {
         text-align: left;
     }
+    .title.spec {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    .subtitle.spec {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    #specs-1, #specs-2 {
+        text-transform: uppercase;
+    }
+    #torque, #weight, #speed {
+        padding: 19px;
+        text-align: center;
+        text-transform:uppercase;
+        font-weight: bold;
 
+    }
     /* Calls different sizes of the same element depending on screen width */
     /*Landing Section background image*/
     @media (max-width: 1024px) {#landing {background: url(static/background/1024_hero.jpeg) center/cover}}
@@ -90,6 +107,12 @@
     @media screen and (max-width: 1200px) {#description_title {font-size: 5.8vw}}
     @media screen and (max-width: 1000px) {#description_title {font-size: 7vw}}
     @media screen and (max-width: 800px) {#description_title {font-size: 6vw}}
+    /*Detail section title font*/
+    @media screen and (max-width: 1800px) {#detail_title {font-size: 5vw}}
+    @media screen and (max-width: 1500px) {#detail_title {font-size: 6vw}}
+    @media screen and (max-width: 1200px) {#detail_title {font-size: 7vw}}
+    @media screen and (max-width: 1000px) {#detail_title {font-size: 8vw}}
+    @media screen and (max-width: 800px) {#detail_title {font-size: 9vw}}
 </style>
 
     <body>
@@ -213,10 +236,11 @@
                 <button class="button center is-medium is-rounded" style="background-color: #B30000; color: white; border-color: transparent">Load More</button>
             </div>
         </section>
-        <section class="center center-column is-gapless">
+        <!--Highlight Section Desktop version-->
+        <section class="center-column desktop2">
             <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 500px; margin-bottom: 0">
                 <div class="column is-three-quarters" >
-                    <img src="static/highlight/highlight_01.jpg" height="665" width="1500"/>
+                    <img src="static/highlight/highlight_01.jpg"/>
                 </div>
                 <div class="column is-one-quarter is-black center-column" id="highlight-one">
                     <div>
@@ -246,5 +270,127 @@
                 </div>
             </div>
         </section>
+        <!--Highlight section mobile version-->
+        <section class="center-column portable2">
+            <div class="columns is-gapless is-multiline is-mobile" style="width: 100%; margin-bottom: 0">
+                <div class="column is-full is-gapless" >
+                    <img src="static/highlight/highlight_01.jpg" style="height: 100%; width: 100%"/>
+                </div>
+                <div class="column is-full is-black center-column" id="highlight-one-p">
+                    <div>
+                        <p class="title is-spaced" id="highlight1-title-p">The GR Supra Launch Edition</p>
+                        <p class="subtitle" id="highlight1-subtitle-p"> Only a lucky few will get the opportunity to experience the GR Supra Launch
+                            Edition. Limited to just 1500 units—and available in Renaissance Red 2.0, Nocturnal or Absolute
+                            Zero—each of these cars comes standard with red mirror caps, unique matte-black wheels, and an
+                            individually numbered interior badge with Akio Toyoda’s signature.
+                        </p>
+                        <p style="color:#B30000; text-transform: uppercase; text-align: right">Learn More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-gapless is-multiline is-mobile" style="width: 100%;">
+                <div class="column is-full is-gapless">
+                    <img src="static/highlight/highlight_02.jpg" style="width: 100%; height: 100%"/>
+                </div>
+                <div class="column is-full is-black center-column" id="highlight-two-p">
+                    <div>
+                        <p class="title is-spaced" id="highlight2-title-p">Barrett-Jackson Auction</p>
+                        <p class="subtitle" id="highlight2-subtitle-p"> The first globally produced all-new 2020 GR
+                            Supra goes for $2.1 Million at the Barrett-Jackson Auction, benefiting the American
+                            Heart Association and the Bob Woodruff Foundation.
+                        </p>
+                        <p style="color:#B30000; text-transform: uppercase; text-align: left">Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Detail Section-->
+        <section id="detail_section">
+            <div class="container has-text-centered" id="detail_container">
+                <p class="title is-spaced" id="detail_title"> PURE. PERFORMER.</p>
+                <p class="subtitle" id="detail_subtitle">Our approach to designing the GR Supra was simple: We wanted
+                    to create the best driver’s car, period. Under the hood, a 3.0-liter twin-scroll turbocharged
+                    inline six redefines responsiveness, letting drivers control the throttle with millimeter
+                    precision. We moved this engine as far back, and as low, as possible—optimizing the center of
+                    gravity for a 50:50 front/rear weight distribution. A rigid chassis, adaptive suspension and
+                    Michelin® Pilot® Super Sport tires help ensure that this Supra drives as good as it looks. And
+                    with its active differential and Brembo® 29 front brakes, this car is equipped to give its driver
+                    the ultimate in control.
+                </p>
+            </div>
+        </section>
+        <!--Specification Section-->
+        <section class="center" id="specs-1">
+            <div class="columns is-multiline is-mobile center is-variable is-8" style="text-align: center; margin-bottom: 5px">
+                <div class="column is-one-third">
+                    <p class="title spec">335</p>
+                    <p class="subtitle spec">Horsepower</p>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title spec">50:50</p>
+                    <p class="subtitle spec">Weight Distribution</p>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title spec">4.1</p>
+                    <p class="subtitle spec">Seconds, 0-60</p>
+                </div>
+            </div>
+        </section>
+        <div class="center">
+            <hr noshade style="width: 70%">
+        </div>
+        <section class="center" id="specs-2" style="margin-bottom: 40px">
+            <div style="text-align: center">
+                <div id="detail-grid">
+                    <div id="torque">
+                        <p>365 LB.-FT. OF TORQUE</p>
+                    </div>
+                    <div id="weight">
+                        <p>3397 POUNDS, TOTAL</p>
+                    </div>
+                    <div id="speed">
+                        <p>155 MPH TOP SPEED</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Performance Section Desktop version-->
+        <section class="center desktop2">
+            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 600px; margin-bottom: 0">
+                <div class="column is-three-quarters" >
+                    <img src="static/highlight/GR_01.png" style="width: auto"/>
+                </div>
+                <div class="column is-one-quarter is-black center-column" id="performance-one">
+                    <div>
+                        <p class="title is-spaced" id="performance-title">TOYOTA GAZOO Racing</p>
+                        <p class="subtitle" id="performance-subtitle">TOYOTA GAZOO Racing is Toyota’s global
+                            racing division, wherein our passion for motorsports and innovation is put to the
+                            test. TOYOTA GAZOO Racing has earned victories in everything from the World Rally
+                            Championship to the 24 Hours of Le Mans. Now we bring this passion to each and every
+                            GR Supra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Performance Section Mobile version-->
+        <section class="center portable2">
+                <div class="columns is-gapless is-multiline is-mobile" style="width: 100%; max-width: 1290px; margin-bottom: 0">
+                    <div class="column is-full" >
+                        <img src="static/highlight/GR_01.png" style="width: auto; height: 100%;"/>
+                    </div>
+                    <div class="column is-full is-black center-column" id="performance-one-p">
+                        <div>
+                            <p class="title is-spaced" id="performance-title-p">TOYOTA GAZOO Racing</p>
+                            <p class="subtitle" id="performance-subtitle-p">TOYOTA GAZOO Racing is Toyota’s global
+                                racing division, wherein our passion for motorsports and innovation is put to the
+                                test. TOYOTA GAZOO Racing has earned victories in everything from the World Rally
+                                Championship to the 24 Hours of Le Mans. Now we bring this passion to each and every
+                                GR Supra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </body>
 </html>

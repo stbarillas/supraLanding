@@ -33,3 +33,15 @@
 	}
 }
 
+@media (max-width: 1500px) {
+	.desktop2 {
+		display: none;
+	}
+}
+
+@media (min-width: 1501px) {
+	.portable2 {
+		display: none;
+	}
+}
+
