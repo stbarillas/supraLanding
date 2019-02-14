@@ -13,9 +13,24 @@
     </head>
 
 <style>
-
     #landing {
         background:  url(static/background/2560_hero.jpeg) center/cover;
+    }
+    .button {
+        font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+        text-transform: uppercase;
+        transition: transform .3s; /* Animation */
+    }
+    .button:hover {
+        transform: scale(1.1);
+    }
+    .navbar-item {
+        font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .navbar-item:hover{
+        color: white;
     }
 
     #intro_title, #detail_title {
@@ -85,6 +100,10 @@
         font-weight: bold;
 
     }
+    .credits {
+        font-size: 25px;
+        text-align: center;
+    }
     /* Calls different sizes of the same element depending on screen width */
     /*Landing Section background image*/
     @media (max-width: 1024px) {#landing {background: url(static/background/1024_hero.jpeg) center/cover}}
@@ -126,8 +145,10 @@
             </div>
             <!--Hero foot-->
             <div class="hero-foot center-column" style="padding:50px">
-                <button class="button center is-medium is-rounded" style="background-color: #B30000; color: white; border-color: transparent">Get Updates</button>
-                <h1>Placeholder icon</h1>
+                <button class="button center is-large is-rounded" style="background-color: #B30000; color: white; border-color: transparent">&emsp; Get Updates &emsp;</button>
+                <h1>
+                    <i class="fas fa-chevron-down fa-4x" style="margin-top: 30px"></i>
+                </h1>
             </div>
         </section>
         <!-- Nav Bar Section-->
@@ -157,7 +178,7 @@
                 </div>
                 <!--Right Column-->
                 <div class="column center">
-                    <button class="button is-medium is-rounded " style="background-color: #B30000; color: white; border-color: transparent">Get Updates</button>
+                    <button class="button is-medium is-rounded" style="background-color: #B30000; color: white; border-color: transparent">Get Updates</button>
                 </div>
             </div>
         </section>
@@ -356,9 +377,9 @@
         </section>
         <!--Performance Section Desktop version-->
         <section class="center desktop2">
-            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 600px; margin-bottom: 0">
+            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 100%; margin-bottom: 0">
                 <div class="column is-three-quarters" >
-                    <img src="static/highlight/GR_01.png" style="width: auto"/>
+                    <img src="static/highlight/GR_01.png" style="width: auto; height: 100%"/>
                 </div>
                 <div class="column is-one-quarter is-black center-column" id="performance-one">
                     <div>
@@ -391,6 +412,36 @@
                         </div>
                     </div>
                 </div>
-            </section>
+        </section>
+        <!--Footer-->
+        <section style="margin-top: 30px">
+            <div class="container center-column" style="margin-bottom: 40px; margin-top: 50px;">
+                <div class="columns ">
+                    <div class="column">
+                        <a href="https://www.linkedin.com/in/steve-barillas-755a6838/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.instagram.com/inert_atmo/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href='mailto:stbarillas@gmail.com' target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="credits">This website was crafted with <span role="img" aria-label="emoji">❤️</span><br>
+                    by Steve Barillas<br>using
+                    <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a><br>
+                    Source code on <a href="https://github.com/stbarillas/surpraLanding" target="_blank"
+                                      rel="noopener noreferrer">
+                        Github</a>
+                </p>
+
+            </div>
+        </section>
     </body>
 </html>
