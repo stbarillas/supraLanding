@@ -1,7 +1,7 @@
-# 🚗 Toyota Supra Launch page 🚗
+# 🚗 Toyota Supra Launch Page 🚗
  
 ## Supra Launch
-This recreation of the Toyota Supra Launch page was made using Bulma, Flexbox, & CSS Grid for desktop and mobile viewing. 
+I love cars so I recreated the 2020 Toyota Supra launch page. This website was made using Bulma, Flexbox, & CSS Grid for desktop and mobile devices. 
 
 
 ## Languages and Tools 💻
