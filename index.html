@@ -105,7 +105,10 @@
         text-align: center;
         text-transform:uppercase;
         font-weight: bold;
-
+    }
+    #performance1, #performance2  {
+        background: url(static/highlight/GR_01.png) center/cover;
+        height: 600px;
     }
     .credits {
         font-size: 25px;
@@ -141,6 +144,11 @@
     @media screen and (max-width: 800px) {#detail_title {font-size: 9vw}}
     /*Spec section font style override for portable view*/
     @media screen and (max-width: 500px) {.title.spec {font-size: 2rem}}
+    /*Performance Section image*/
+    @media (max-width: 1024px) {#performance1,#performance2 {background: url(static/highlight/1024_GR_01.jpg) center/cover; height: 500px;}}
+    @media (max-width: 768px) {#performance1, #performance2 {background: url(static/highlight/768_GR_01.jpg) center/cover; height: 400px}}
+    @media (max-width: 600px) {#performance1, #performance2 {background: url(static/highlight/600_GR_01.jpg) center/cover; height: 300px}}
+    @media (max-width: 375px) {#performance1, #performance2 {background: url(static/highlight/320_GR_01.jpg) center/cover; height: 200px}}
 </style>
 
     <body>
@@ -404,8 +412,7 @@
         <!--Performance Section Desktop version-->
         <section class="center desktop2">
             <div class="columns is-gapless" style="width: 100%; max-width: 1504px; margin-bottom: 0">
-                <div class="column is-three-quarters" >
-                    <img src="static/highlight/GR_01.png" style="width: 100% ;max-height: 500px;"/>
+                <div class="column is-three-quarters" id="performance1" style="height: 600px">
                 </div>
                 <div class="column is-one-quarter is-black center-column" id="performance-one">
                     <div>
@@ -421,10 +428,9 @@
             </div>
         </section>
         <!--Performance Section Mobile version-->
-        <section class="center portable2">
-                <div class="columns is-gapless is-multiline is-mobile" style="width: 100%; max-width: 1290px; margin-bottom: 0">
-                    <div class="column is-full" >
-                        <img src="static/highlight/GR_01.png" style="width: 100% ;max-height: 500px;"/>
+        <section class="center portable2" >
+                <div class="columns is-gapless is-multiline" style="width: 1280px; margin-bottom: 0; margin-bottom: 0">
+                    <div class="column is-full is-gapless" id="performance2">
                     </div>
                     <div class="column is-full is-black center-column" id="performance-one-p">
                         <div>
