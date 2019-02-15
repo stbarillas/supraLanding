@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style/helper.css">
         <link rel="stylesheet" href="style/grid.css">
         <link rel="shortcut icon" type="image/x-icon" href="static/logos/favicon.ico"/>
-        <!--<link rel="stylesheet" href="style/debug.css">-->
+        <link rel="stylesheet" href="style/debug.css">
     </head>
 
 <style>
@@ -44,6 +44,7 @@
         color: black;
     }
     #intro_subtitle, #detail_subtitle {
+        margin: 2rem;
         margin-bottom: 3.5rem;
     }
     #description_title {
@@ -56,6 +57,7 @@
         color: black;
     }
     #description_subtitle {
+        margin: 2rem;
         margin-bottom: 3.5rem;
     }
 
@@ -78,6 +80,10 @@
         color: white;
         text-align: right;
         margin-bottom: 5px;
+    }
+    /*override the text alignment set above for portable highlight sections*/
+    #highlight1-title-p, #highlight2-title-p, #highlight1-subtitle-p, #highlight2-subtitle-p, #performance-title-p, #performance-subtitle-p {
+        text-align: center;
     }
 
     #highlight2-title ,#highlight2-subtitle {
@@ -133,6 +139,8 @@
     @media screen and (max-width: 1200px) {#detail_title {font-size: 7vw}}
     @media screen and (max-width: 1000px) {#detail_title {font-size: 8vw}}
     @media screen and (max-width: 800px) {#detail_title {font-size: 9vw}}
+    /*Spec section font style override for portable view*/
+    @media screen and (max-width: 500px) {.title.spec {font-size: 2rem}}
 </style>
 
     <body>
@@ -215,7 +223,7 @@
         <!-- Gallery -->
         <section class="center">
             <div id="grid" style="width: 100%; max-width: 1800px;">
-                <div id="a" style="height: 100%">
+                <div id="a">
                     <img src="static/gallery/design_01.jpg"/>
                 </div>
                 <div id="b">
@@ -321,7 +329,7 @@
                             Supra goes for $2.1 Million at the Barrett-Jackson Auction, benefiting the American
                             Heart Association and the Bob Woodruff Foundation.
                         </p>
-                        <p style="color:#B30000; text-transform: uppercase; text-align: left">Learn More</p>
+                        <p style="color:#B30000; text-transform: uppercase; text-align: right">Learn More</p>
                     </div>
                 </div>
             </div>
@@ -341,9 +349,26 @@
                 </p>
             </div>
         </section>
-        <!--Specification Section-->
-        <section class="center" id="specs-1">
+        <!--Specification Section Desktop-->
+        <section class="center desktop3" id="specs-1">
             <div class="columns is-multiline is-mobile center is-variable is-8" style="text-align: center; margin-bottom: 5px">
+                <div class="column is-one-third">
+                    <p class="title spec">335</p>
+                    <p class="subtitle spec">Horsepower</p>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title spec">50:50</p>
+                    <p class="subtitle spec">Weight Distribution</p>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title spec">4.1</p>
+                    <p class="subtitle spec">Seconds, 0-60</p>
+                </div>
+            </div>
+        </section>
+        <!--Specification Section Portable -->
+        <section class="center portable3" id="specs-1-p">
+            <div class="columns is-multiline is-mobile center is-variable is-1" style="text-align: center; margin-bottom: 5px">
                 <div class="column is-one-third">
                     <p class="title spec">335</p>
                     <p class="subtitle spec">Horsepower</p>
@@ -378,9 +403,9 @@
         </section>
         <!--Performance Section Desktop version-->
         <section class="center desktop2">
-            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; height: 100%; margin-bottom: 0">
+            <div class="columns is-gapless" style="width: 100%; max-width: 1504px; margin-bottom: 0">
                 <div class="column is-three-quarters" >
-                    <img src="static/highlight/GR_01.png" style="width: auto; height: 100%"/>
+                    <img src="static/highlight/GR_01.png" style="width: 100% ;max-height: 500px;"/>
                 </div>
                 <div class="column is-one-quarter is-black center-column" id="performance-one">
                     <div>
@@ -399,7 +424,7 @@
         <section class="center portable2">
                 <div class="columns is-gapless is-multiline is-mobile" style="width: 100%; max-width: 1290px; margin-bottom: 0">
                     <div class="column is-full" >
-                        <img src="static/highlight/GR_01.png" style="width: auto; height: 100%;"/>
+                        <img src="static/highlight/GR_01.png" style="width: 100% ;max-height: 500px;"/>
                     </div>
                     <div class="column is-full is-black center-column" id="performance-one-p">
                         <div>
