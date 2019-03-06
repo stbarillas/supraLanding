@@ -114,6 +114,9 @@
         font-size: 25px;
         text-align: center;
     }
+    .is-active{
+        color: white;
+    }
     /* Calls different sizes of the same element depending on screen width */
     /*Landing Section background image*/
     @media (max-width: 1024px) {#landing {background: url(static/background/1024_hero.jpeg) center/cover}}
@@ -185,9 +188,9 @@
                 </div>
                 <!--Center Column desktop-->
                 <div class="column center desktop">
-                    <p class="navbar-item" style="margin-right: 40px">Design</p>
-                    <p class="navbar-item" style="margin-right: 40px"> Performance</p>
-                    <p class="navbar-item" style="margin-right: 0px">Heritage</p>
+                    <p class="navbar-item" onclick="scrollToDesign()" style="margin-right: 40px">Design</p>
+                    <p class="navbar-item" onclick="scrollToPerformance()" style="margin-right: 40px"> Performance</p>
+                    <p class="navbar-item" onclick="scrollToHeritage()" style="margin-right: 0px">Heritage</p>
                 </div>
                 <!--Center Column portable-->
                 <div class="center-column portable">
@@ -215,7 +218,7 @@
         <section>
             <img src="static/background/1500_beauty_01.jpg" style="width: 100%">
         </section>
-        <section id="description_section">
+        <section id="description_section" class="section-jump">
             <div class="container has-text-centered" id="description_container">
                 <p class="title is-spaced" id="description_title"> Beautifully engineered</p>
                 <p class="subtitle" id="description_subtitle">With its sensuous bodywork, athletic stance and
@@ -343,7 +346,7 @@
             </div>
         </section>
         <!--Detail Section-->
-        <section id="detail_section">
+        <section id="detail_section" class="section-jump">
             <div class="container has-text-centered" id="detail_container">
                 <p class="title is-spaced" id="detail_title"> PURE. PERFORMER.</p>
                 <p class="subtitle" id="detail_subtitle">Our approach to designing the GR Supra was simple: We wanted
@@ -428,7 +431,7 @@
             </div>
         </section>
         <!--Performance Section Mobile version-->
-        <section class="center portable2" >
+        <section id="heritage" class="section-jump center portable2">
                 <div class="columns is-gapless is-multiline" style="width: 1280px; margin-bottom: 0; margin-bottom: 0">
                     <div class="column is-full is-gapless" id="performance2">
                     </div>
@@ -475,5 +478,6 @@
 
             </div>
         </section>
+    <script type="text/javascript" src="style/custom.js"></script>
     </body>
 </html>
