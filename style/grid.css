@@ -1,24 +1,22 @@
-#a { grid-area: a; }
-#b { grid-area: b; }
-#c { grid-area: c; }
-#d { grid-area: d; }
-#e { grid-area: e; }
-#f { grid-area: f; }
-#g { grid-area: g; }
-#h { grid-area: h; }
-#i { grid-area: i; }
-#j { grid-area: j; }
-#k { grid-area: k; }
-#l { grid-area: l; }
-#m { grid-area: m; }
-#n { grid-area: n; }
-#o { grid-area: o; }
-#p { grid-area: p; }
-#q { grid-area: q; }
-#r { grid-area: r; }
-#s { grid-area: s; }
-#t { grid-area: t; }
-#u { grid-area: u; }
+#a { grid-area: a; background: url('../static/gallery/design_01.jpg')}
+#b { grid-area: b; background: url('../static/gallery/design_02.jpg')}
+#c { grid-area: c; background: url('../static/gallery/design_03.jpg')}
+#d { grid-area: d; background: url('../static/gallery/design_04.jpg')}
+#e { grid-area: e; background: url('../static/gallery/design_05.jpg')}
+#f { grid-area: f; background: url('../static/gallery/design_06.jpg')}
+#g { grid-area: g; background: url('../static/gallery/design_07.jpg')}
+#h { grid-area: h; background: url('../static/gallery/design_08.jpg')}
+#i { grid-area: i; background: url('../static/gallery/design_09.jpg')}
+#j { grid-area: j; background: url('../static/gallery/design_10.jpg')}
+#k { grid-area: k; background: url('../static/gallery/design_11.jpg')}
+#l { grid-area: l; background: url('../static/gallery/design_12.jpg')}
+#m { grid-area: m; background: url('../static/gallery/design_13.jpg')}
+#n { grid-area: n; background: url('../static/gallery/design_14.jpg')}
+#o { grid-area: o; background: url('../static/gallery/design_15.jpg')}
+#p { grid-area: p; background: url('../static/gallery/design_16.jpg')}
+#q { grid-area: q; background: url('../static/gallery/design_17.jpg')}
+#r { grid-area: r; background: url('../static/gallery/design_18.jpg')}
+
 
 #grid {
     display: grid;
