@@ -1,0 +1,168 @@
+#landing {
+    background:  url(../static/background/2560_hero.jpeg) center/cover;
+}
+.button {
+    font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+    text-transform: uppercase;
+    transition: transform .3s; /* Animation */
+}
+
+/*arrow bounce animation*/
+.arrowFade{
+    animation: fade 2s infinite;
+}
+@keyframes fade {
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+.navbar-item {
+    font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.navbar-item:hover{
+    color: white;
+}
+
+#intro_title, #detail_title {
+    margin-top: 5.1875rem;
+    margin-bottom: 1.5625rem;
+    font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+    font-size: 4vw;
+    text-transform:uppercase;
+    width: 100%;
+    color: black;
+}
+#intro_subtitle, #detail_subtitle {
+    margin: 2rem;
+    margin-bottom: 3.5rem;
+}
+#description_title {
+    margin-top: 5.1875rem;
+    margin-bottom: 1.5625rem;
+    font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+    font-size: 3vw;
+    text-transform:uppercase;
+    width: 100%;
+    color: black;
+}
+#description_subtitle {
+    margin: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+#highlight-one,#highlight-one-p, #highlight-two, #highlight-two-p, #performance-one, #performance-one-p {
+    background: black;
+    padding-left: 60px!important;
+    padding-right: 60px!important;
+}
+
+#highlight1-title, #highlight1-title-p, #highlight2-title, #highlight2-title-p, #performance-title, #performance-title-p {
+    color: white;
+    font-family:tcomBold,HelvNeueBold,Helvetica Bold,Arial Bold,Gadget,sans-serif;
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
+
+}
+
+#highlight1-subtitle, #highlight1-subtitle-p, #highlight2-subtitle, #highlight2-subtitle-p, #performance-subtitle, #performance-subtitle-p {
+    color: white;
+    text-align: right;
+    margin-bottom: 5px;
+}
+/*override the text alignment set above for portable highlight sections*/
+#highlight1-title-p, #highlight2-title-p, #highlight1-subtitle-p, #highlight2-subtitle-p, #performance-title-p, #performance-subtitle-p {
+    text-align: center;
+}
+
+#highlight2-title ,#highlight2-subtitle {
+    text-align: left;
+}
+.title.spec {
+    font-size: 3em;
+    font-weight: bold;
+}
+.subtitle.spec {
+    font-size: 1em;
+    font-weight: bold;
+}
+#specs-1, #specs-2 {
+    text-transform: uppercase;
+}
+#torque, #weight, #speed {
+    padding: 19px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+#performance1, #performance2  {
+    background: url(../static/highlight/GR_01.png) center/cover;
+    height: 600px;
+}
+.credits {
+    font-size: 25px;
+    text-align: center;
+}
+.is-active{
+    color: white;
+}
+.grid-tile {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+
+}
+.img-tile {transform: scale(1.1)}
+
+/* Calls different sizes of the same element depending on screen width */
+/*Landing Section background image*/
+@media (max-width: 1024px) {#landing {background: url(../static/background/1024_hero.jpeg) center/cover}}
+@media (max-width: 768px) {#landing {background: url(../static/background/768_hero.jpeg) center/cover}}
+@media (max-width: 600px) {#landing {background: url(../static/background/600_hero.jpeg) center/cover}}
+@media (max-width: 375px) {#landing {background: url(../static/background/375_hero.jpeg) center/cover}}
+/*Intro section title font*/
+@media screen and (max-width: 1800px) {#intro_title {font-size: 5vw}}
+@media screen and (max-width: 1500px) {#intro_title {font-size: 6vw}}
+@media screen and (max-width: 1200px) {#intro_title {font-size: 7vw}}
+@media screen and (max-width: 1000px) {#intro_title {font-size: 8vw}}
+@media screen and (max-width: 800px) {#intro_title {font-size: 9vw}}
+/*Intro section beauty image*/
+@media (max-width: 1024px) {#intro {background: url(../static/background/1024_beauty_01.jpg) center/cover}}
+@media (max-width: 768px) {#intro {background: url(../static/background/768_beauty_01.jpg) center/cover}}
+@media (max-width: 600px) {#intro {background: url(../static/background/600_beauty_01.jpg) center/cover}}
+/*Description section title font*/
+@media screen and (max-width: 1800px) {#description_title {font-size: 4vw}}
+@media screen and (max-width: 1500px) {#description_title {font-size: 5vw}}
+@media screen and (max-width: 1200px) {#description_title {font-size: 5.8vw}}
+@media screen and (max-width: 1000px) {#description_title {font-size: 7vw}}
+@media screen and (max-width: 800px) {#description_title {font-size: 6vw}}
+/*Detail section title font*/
+@media screen and (max-width: 1800px) {#detail_title {font-size: 5vw}}
+@media screen and (max-width: 1500px) {#detail_title {font-size: 6vw}}
+@media screen and (max-width: 1200px) {#detail_title {font-size: 7vw}}
+@media screen and (max-width: 1000px) {#detail_title {font-size: 8vw}}
+@media screen and (max-width: 800px) {#detail_title {font-size: 9vw}}
+/*Spec section font style override for portable view*/
+@media screen and (max-width: 500px) {.title.spec {font-size: 2rem}}
+/*Performance Section image*/
+@media (max-width: 1024px) {#performance1,#performance2 {background: url(../static/highlight/1024_GR_01.jpg) center/cover; height: 500px;}}
+@media (max-width: 768px) {#performance1, #performance2 {background: url(../static/highlight/768_GR_01.jpg) center/cover; height: 400px}}
+@media (max-width: 600px) {#performance1, #performance2 {background: url(../static/highlight/600_GR_01.jpg) center/cover; height: 300px}}
+@media (max-width: 375px) {#performance1, #performance2 {background: url(../static/highlight/320_GR_01.jpg) center/cover; height: 200px}}

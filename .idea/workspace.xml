@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6af3812-f07e-463f-b851-36c9045673a0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/grid.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+            <state relative-caret-position="253">
+              <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#h1#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -38,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/grid.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="265">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -53,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -75,6 +78,7 @@
         <option value="$PROJECT_DIR$/style/custom.js" />
         <option value="$PROJECT_DIR$/style/grid.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style/style.css" />
       </list>
     </option>
   </component>
@@ -103,17 +107,6 @@
             <path>
               <item name="surpraLanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="surpraLanding" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surpraLanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surpraLanding" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="surpraLanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="surpraLanding" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -125,6 +118,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,21 +143,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550192056399</updated>
-      <workItem from="1551828826884" duration="6961000" />
+      <workItem from="1551828826884" duration="7221000" />
+      <workItem from="1551856422168" duration="106000" />
+      <workItem from="1551856545052" duration="53000" />
+      <workItem from="1552267322743" duration="128000" />
+      <workItem from="1552268836424" duration="1167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6961000" />
+    <option name="totallyTimeSpent" value="8675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18012924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1898223" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -175,6 +173,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -211,17 +210,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+        <state relative-caret-position="253">
+          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h1#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -236,6 +236,13 @@
             <element signature="n#style#0;n#div#0;n#section#14;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#15;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
