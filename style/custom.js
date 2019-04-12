@@ -15,7 +15,7 @@ window.addEventListener('scroll', changeLinkState);
 //Scoll to view functions for navbar items
 function scrollToDesign() {
     var x = document.getElementById("description_title");
-    x.scrollIntoView({behavior: 'smgit ooth'});
+    x.scrollIntoView({behavior: 'smooth'});
 }
 function scrollToPerformance() {
     var x = document.getElementById("detail_title");
